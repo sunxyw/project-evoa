@@ -4,10 +4,14 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "start": "turbo start",
+    "lint": "turbo run biome-check",
+    "format": "turbo run biome-check:fix",
+    "biome-check": "biome check .",
+    "biome-check:fix": "biome check . --write --unsafe"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.2",
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
     "typescript": "^5.4.5"

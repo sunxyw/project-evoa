@@ -18,6 +18,8 @@ const meta = {
         "secondary",
         "ghost",
         "link",
+
+        "glow",
       ],
       control: { type: "radio" },
     },
@@ -98,5 +100,12 @@ export const Loading: Story = {
     variant: "default",
     disabled: true,
     children: "Loading...",
+  },
+};
+
+export const Glow: Story = {
+  args: {
+    variant: "glow",
+    children: "Glow",
   },
 };

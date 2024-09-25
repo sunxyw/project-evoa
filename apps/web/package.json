@@ -6,8 +6,7 @@
     "reset": "npx rimraf node_modules ./**/node_modules",
     "dev": "modern dev",
     "build": "modern build",
-    "start": "modern start",
-    "serve": "modern serve",
+    "start": "modern serve",
     "new": "modern new",
     "upgrade": "modern upgrade"
   },

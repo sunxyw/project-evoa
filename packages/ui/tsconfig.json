@@ -6,9 +6,8 @@
     "emitDeclarationOnly": true,
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "rootDir": "src"
+    }
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src"]
+  "include": ["src", "tailwind.config.ts"]
 }

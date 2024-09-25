@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@repo/ui/components/button";
 import { Helmet } from "@modern-js/runtime/head";
 
 const Index = () => (

@@ -18,13 +18,17 @@ const meta = {
         "secondary",
         "ghost",
         "link",
-
-        "glow",
+        "light",
+        "dimmed",
       ],
       control: { type: "radio" },
     },
     size: {
       options: ["default", "sm", "lg", "icon"],
+      control: { type: "radio" },
+    },
+    decoration: {
+      options: ["default", "glow"],
       control: { type: "radio" },
     },
   },
@@ -76,6 +80,20 @@ export const Link: Story = {
   },
 };
 
+export const Light: Story = {
+  args: {
+    variant: "light",
+    children: "Light",
+  },
+};
+
+export const Dimmed: Story = {
+  args: {
+    variant: "dimmed",
+    children: "Dimmed",
+  },
+};
+
 export const Icon: Story = {
   args: {
     variant: "outline",
@@ -105,7 +123,8 @@ export const Loading: Story = {
 
 export const Glow: Story = {
   args: {
-    variant: "glow",
+    variant: "light",
+    decoration: "glow",
     children: "Glow",
   },
 };

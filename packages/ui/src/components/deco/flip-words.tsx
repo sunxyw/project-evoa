@@ -54,10 +54,7 @@ const FlipWords = ({ words, duration = 3000, className }: FlipWordsProps) => {
           scale: 2,
           position: "absolute",
         }}
-        className={cn(
-          "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 px-2",
-          className,
-        )}
+        className={cn("inline-block relative", className)}
         key={currentWord}
       >
         {currentWord.split(" ").map((word, wordIndex) => (

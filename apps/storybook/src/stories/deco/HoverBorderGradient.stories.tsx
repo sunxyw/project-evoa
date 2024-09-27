@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { HoverBorderGradient } from "@repo/ui/components/hover-border-gradient";
+import { HoverBorderGradient } from "@repo/ui/components/deco/hover-border-gradient";
 
 const meta = {
-  title: "HoverBorderGradient",
+  title: "Deco/HoverBorderGradient",
   component: HoverBorderGradient,
   parameters: {
     layout: "centered",

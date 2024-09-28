@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@modern-js/app-tools": "2.60.2",
-    "@modern-js/plugin-tailwindcss": "2.60.0",
+    "@modern-js/plugin-tailwindcss": "2.60.2",
     "@repo/typescript-config": "workspace:*",
     "@types/jest": "~29.5.13",
     "@types/node": "~16.18.112",

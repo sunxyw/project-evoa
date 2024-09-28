@@ -1,5 +1,5 @@
-import { Button } from "@repo/ui/components/button";
 import { Helmet } from "@modern-js/runtime/head";
+import { Button } from "@repo/ui/components/button";
 
 const Index = () => (
   <div className="container-box">

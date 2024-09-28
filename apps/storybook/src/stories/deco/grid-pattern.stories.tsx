@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { GridPattern } from "@repo/ui/components/deco/grid-pattern";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/GridPattern",

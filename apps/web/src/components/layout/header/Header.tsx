@@ -1,7 +1,6 @@
 import LogoImage from "@/assets/logo.svg?react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@repo/ui/components/button";
 import { ArrowRightIcon, MenuIcon } from "lucide-react";
-import {} from "react";
 import DesktopNavigation from "./DesktopNavigation";
 
 export default function Header() {

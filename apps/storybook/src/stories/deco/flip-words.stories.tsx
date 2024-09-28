@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { FlipWords } from "@repo/ui/components/deco/flip-words";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/FilpWords",

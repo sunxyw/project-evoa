@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { CircleCheckBigIcon, CircleDashedIcon } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type LoadingState = {
   text: string;
@@ -22,6 +22,7 @@ const LoaderCore = ({
 
         return (
           <motion.div
+            // biome-ignore lint/suspicious/noArrayIndexKey: Element should changes once the index changes
             key={index}
             className={cn("text-left flex gap-2 mb-4")}
             initial={{ opacity: 0, y: -(value * 40) }}

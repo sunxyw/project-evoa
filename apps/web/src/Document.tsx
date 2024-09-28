@@ -12,7 +12,6 @@ import { useContext } from "react";
 export default function Document(): React.ReactElement {
   const {
     config: { output: htmlConfig },
-    entryName,
     templateParams,
   } = useContext(DocumentContext);
 

@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { MultiStepLoader } from "@repo/ui/components/multi-step-loader";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "MultiStepLoader",

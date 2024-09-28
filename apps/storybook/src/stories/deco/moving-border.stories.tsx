@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { MovingBorder } from "@repo/ui/components/deco/moving-border";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/MovingBorder",

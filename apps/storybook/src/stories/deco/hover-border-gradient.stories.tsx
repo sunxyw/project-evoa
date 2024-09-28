@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { HoverBorderGradient } from "@repo/ui/components/deco/hover-border-gradient";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/HoverBorderGradient",

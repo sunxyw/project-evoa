@@ -1,8 +1,8 @@
-import { useState, useEffect, type HTMLAttributes } from "react";
+import { type HTMLAttributes, useEffect, useState } from "react";
 
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
+import { motion } from "framer-motion";
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 

@@ -1,4 +1,5 @@
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import { cn } from "@/lib/utils";
+import { Slot } from "@radix-ui/react-slot";
 import {
   motion,
   useAnimationFrame,
@@ -6,9 +7,8 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
+import type { HTMLAttributes, PropsWithChildren } from "react";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
-import { Slot } from "@radix-ui/react-slot";
 
 export interface MovingBorderProps extends HTMLAttributes<HTMLDivElement> {
   rounded?: "sm" | "default" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";

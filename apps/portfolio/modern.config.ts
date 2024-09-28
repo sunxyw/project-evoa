@@ -1,5 +1,4 @@
 import { appTools, defineConfig } from "@modern-js/app-tools";
-import { garfishPlugin } from "@modern-js/plugin-garfish";
 import { tailwindcssPlugin } from "@modern-js/plugin-tailwindcss";
 
 // https://modernjs.dev/en/configure/app/usage
@@ -9,16 +8,12 @@ export default defineConfig({
   },
   server: {
     ssr: true,
-    port: 3071,
-  },
-  deploy: {
-    microFrontend: true,
+    port: 3081,
   },
   plugins: [
     appTools({
       bundler: "rspack",
     }),
     tailwindcssPlugin(),
-    garfishPlugin(),
   ],
 });

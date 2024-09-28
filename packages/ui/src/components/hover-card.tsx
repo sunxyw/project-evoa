@@ -6,9 +6,9 @@ import {
   Trigger,
 } from "@radix-ui/react-hover-card";
 import {
-  forwardRef,
-  type ElementRef,
   type ComponentPropsWithoutRef,
+  type ElementRef,
+  forwardRef,
 } from "react";
 
 const HoverCard = ({

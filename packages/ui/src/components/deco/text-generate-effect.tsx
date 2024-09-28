@@ -1,6 +1,6 @@
-import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { motion, stagger, useAnimate } from "framer-motion";
+import { useEffect } from "react";
 
 const TextGenerateEffect = ({
   words,
@@ -36,6 +36,7 @@ const TextGenerateEffect = ({
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
+              // biome-ignore lint/suspicious/noArrayIndexKey: Element should changes once the words changes
               key={word + idx}
               className="dark:text-white text-black opacity-0"
               style={{

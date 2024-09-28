@@ -2,8 +2,7 @@ import animatePlugin from "tailwindcss-animate";
 import { fontFamily } from "tailwindcss/defaultTheme";
 import type { PresetsConfig } from "tailwindcss/types/config";
 
-export const tailwindContent = () =>
-  "./node_modules/@repo/ui/dist/es/**/*.js";
+export const tailwindContent = () => "./node_modules/@repo/ui/dist/es/**/*.js";
 
 export const tailwindPreset: PresetsConfig = {
   darkMode: ["class"],

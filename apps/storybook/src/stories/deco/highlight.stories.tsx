@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { Highlight } from "@repo/ui/components/deco/highlight";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/Highlight",

@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from "@storybook/react";
 import { TextGenerateEffect } from "@repo/ui/components/deco/text-generate-effect";
+import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
   title: "Deco/TextGenerateEffect",

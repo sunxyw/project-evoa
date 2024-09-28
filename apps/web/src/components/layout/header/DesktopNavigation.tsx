@@ -1,7 +1,6 @@
 "use client";
 
 import LogoImage from "@/assets/logo.svg?react";
-import * as React from "react";
 
 import {
   NavigationMenu,
@@ -24,6 +23,11 @@ import {
   SchoolIcon,
   ShapesIcon,
 } from "lucide-react";
+import {
+  type ComponentPropsWithoutRef,
+  type ElementRef,
+  forwardRef,
+} from "react";
 
 const features: {
   title: string;
@@ -140,9 +144,9 @@ export default function DesktopNavigation() {
   );
 }
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon: LucideIcon }
+const ListItem = forwardRef<
+  ElementRef<"a">,
+  ComponentPropsWithoutRef<"a"> & { icon: LucideIcon }
 >(({ className, title, children, icon: Icon, ...props }, ref) => {
   return (
     <li>

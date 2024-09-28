@@ -1,5 +1,3 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
 import {
   Card,
   CardContent,
@@ -9,6 +7,8 @@ import {
   CardTitle,
 } from "@repo/ui/components/card";
 import { GridPattern } from "@repo/ui/components/deco/grid-pattern";
+import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 
 const meta = {
   title: "Card",

@@ -12,9 +12,7 @@ import { toast, Toaster } from "@repo/ui/components/sonner";
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-    >
+    <div className={cn("sticky top-6 mt-6 max-w-2xl mx-auto z-50", className)}>
       <NavigationMenu setActive={setActive}>
         <NavigationMenuItem
           setActive={setActive}
@@ -56,7 +54,7 @@ const UnderConstructionNotice = () => {
 export default function Layout() {
   return (
     <div>
-      <Navbar className="top-6" />
+      <Navbar />
       <Outlet />
       <Toaster />
       <UnderConstructionNotice />

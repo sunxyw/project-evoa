@@ -3,7 +3,7 @@ import { FlipWords } from "@repo/ui/components/deco/flip-words";
 import { Button } from "@repo/ui/components/button";
 
 const HeroSection = () => (
-  <BackgroundBeamsWithCollision className="h-screen">
+  <BackgroundBeamsWithCollision className="h-screen absolute inset-0">
     <div className="mx-auto max-w-2xl text-center z-20">
       <div className="hidden sm:mb-8 sm:flex sm:justify-center">
         <div className="relative rounded-full px-3 py-1 text-sm text-muted-foreground leading-6 ring-1 ring-ring/20 hover:ring-ring/30">
@@ -43,6 +43,6 @@ const HeroSection = () => (
   </BackgroundBeamsWithCollision>
 );
 
-const Index = () => <HeroSection />;
-
-export default Index;
+export default function HomePage() {
+  return <HeroSection />;
+}

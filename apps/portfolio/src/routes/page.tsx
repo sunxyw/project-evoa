@@ -1,96 +1,48 @@
-import { Helmet } from "@modern-js/runtime/head";
-import "./index.css";
+import { BackgroundBeamsWithCollision } from "@repo/ui/components/deco/background-beams-with-collision";
+import { FlipWords } from "@repo/ui/components/deco/flip-words";
+import { Button } from "@repo/ui/components/button";
 
-const Index = () => (
-  <div className="container-box">
-    <Helmet>
-      <link
-        rel="icon"
-        type="image/x-icon"
-        href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
+const HeroSection = () => (
+  <BackgroundBeamsWithCollision className="h-screen">
+    <div className="mx-auto max-w-2xl text-center">
+      <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+        <div className="relative rounded-full px-3 py-1 text-sm text-muted-foreground leading-6 ring-1 ring-ring/20 hover:ring-ring/30">
+          Hello, I&apos;m a passionate Full-Stack Developer with a focus on Web
+          Development.
+        </div>
+      </div>
+      <FlipWords
+        className="mx-auto text-3xl text-foreground font-bold tracking-tight sm:text-6xl text-nowrap"
+        words={[
+          "Full-Stack developer",
+          "PHP/Laravel developer",
+          "PHP/Spiral developer",
+          "React/Next.js developer",
+          // 'DevOps engineer',
+          // 'Svelte beginner',
+          // 'Vue.js beginner',
+          // 'DDD learner',
+          // 'Architecture enthusiast',
+        ]}
       />
-    </Helmet>
-    <main>
-      <div className="title">
-        Welcome to
-        <img
-          className="logo"
-          src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/modern-js-logo.svg"
-          alt="Modern.js Logo"
-        />
-        <p className="name">Modern.js</p>
-      </div>
-      <p className="description">
-        Get started by editing <code className="code">src/routes/page.tsx</code>
+      <p className="mt-6 text-pretty text-lg text-muted-foreground leading-8">
+        I am a self-taught and passionate full-stack developer who has been
+        involved in programming for 6 years and has participated in several
+        open-source projects on GitHub, as well as multiple freelance projects.
       </p>
-      <div className="grid">
-        <a
-          href="https://modernjs.dev/guides/get-started/introduction.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card"
-        >
-          <h2>
-            Guide
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-              alt="Guide"
-            />
-          </h2>
-          <p>Follow the guides to use all features of Modern.js.</p>
-        </a>
-        <a
-          href="https://modernjs.dev/tutorials/foundations/introduction.html"
-          target="_blank"
-          className="card"
-          rel="noreferrer"
-        >
-          <h2>
-            Tutorials
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-              alt="Tutorials"
-            />
-          </h2>
-          <p>Learn to use Modern.js to create your first application.</p>
-        </a>
-        <a
-          href="https://modernjs.dev/configure/app/usage.html"
-          target="_blank"
-          className="card"
-          rel="noreferrer"
-        >
-          <h2>
-            Config
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-              alt="Config"
-            />
-          </h2>
-          <p>Find all configuration options provided by Modern.js.</p>
-        </a>
-        <a
-          href="https://github.com/web-infra-dev/modern.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card"
-        >
-          <h2>
-            Github
-            <img
-              className="arrow-right"
-              src="https://lf3-static.bytednsdoc.com/obj/eden-cn/zq-uylkvT/ljhwZthlaukjlkulzlp/arrow-right.svg"
-              alt="Github"
-            />
-          </h2>
-          <p>View the source code of Github, feel free to contribute.</p>
-        </a>
+
+      <div className="mt-10 flex flex-col items-center justify-center gap-6 *:w-full sm:w-auto sm:flex-row">
+        <Button asChild>
+          <a href="/projects">View Projects</a>
+        </Button>
+        <Button variant="secondary" asChild>
+          <a href="/about">Learn About Me</a>
+        </Button>
       </div>
-    </main>
-  </div>
+    </div>
+  </BackgroundBeamsWithCollision>
 );
+
+const Index = () => <HeroSection />;
 
 export default Index;

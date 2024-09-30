@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
 import { Outlet } from "@modern-js/runtime/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
 } from "@repo/ui/components/navbar-menu";
 import { cn } from "@repo/ui/lib/utils";
+import { toast, Toaster } from "@repo/ui/components/sonner";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
@@ -40,11 +41,25 @@ const Navbar = ({ className }: { className?: string }) => {
   );
 };
 
+const UnderConstructionNotice = () => {
+  useEffect(() => {
+    toast.warning("This website is currently under construction.", {
+      id: "under-construction",
+      duration: Number.POSITIVE_INFINITY,
+      closeButton: true,
+    });
+  }, []);
+
+  return null;
+};
+
 export default function Layout() {
   return (
     <div>
       <Navbar className="top-6" />
       <Outlet />
+      <Toaster />
+      <UnderConstructionNotice />
     </div>
   );
 }

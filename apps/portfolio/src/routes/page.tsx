@@ -4,7 +4,7 @@ import { Button } from "@repo/ui/components/button";
 
 const HeroSection = () => (
   <BackgroundBeamsWithCollision className="h-screen">
-    <div className="mx-auto max-w-2xl text-center">
+    <div className="mx-auto max-w-2xl text-center z-20">
       <div className="hidden sm:mb-8 sm:flex sm:justify-center">
         <div className="relative rounded-full px-3 py-1 text-sm text-muted-foreground leading-6 ring-1 ring-ring/20 hover:ring-ring/30">
           Hello, I&apos;m a passionate Full-Stack Developer with a focus on Web

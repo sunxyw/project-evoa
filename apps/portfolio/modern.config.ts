@@ -16,4 +16,11 @@ export default defineConfig({
     }),
     tailwindcssPlugin(),
   ],
+  html: {
+    title: "Sunxyw",
+    meta: {
+      description:
+        "The personal website of Sunxyw. A passionate Full-Stack Developer with a focus on the Backend. Currently under construction.",
+    },
+  },
 });

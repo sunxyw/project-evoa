@@ -33,7 +33,7 @@ const ProjectCard = ({
   const imageSrc = image || `https://placehold.co/600x400.webp?text=${title}`;
 
   return (
-    <Card className="border-none shadow-none">
+    <Card>
       <CardHeader className="pb-0">
         <img
           src={imageSrc}

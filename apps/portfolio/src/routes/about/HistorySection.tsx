@@ -1,8 +1,8 @@
 import {
   Section,
+  SectionDescription,
   SectionHeader,
   SectionTitle,
-  SectionDescription,
 } from "@repo/ui/components/section";
 
 export default function HistorySection() {

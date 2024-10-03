@@ -1,6 +1,6 @@
+import { Button } from "@repo/ui/components/button";
 import { BackgroundBeamsWithCollision } from "@repo/ui/components/deco/background-beams-with-collision";
 import { FlipWords } from "@repo/ui/components/deco/flip-words";
-import { Button } from "@repo/ui/components/button";
 
 const HeroSection = () => (
   <BackgroundBeamsWithCollision className="h-screen absolute inset-0">

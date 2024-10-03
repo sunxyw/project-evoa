@@ -1,13 +1,13 @@
 import "@/styles/globals.css";
 import { Outlet } from "@modern-js/runtime/router";
-import { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
 } from "@repo/ui/components/navbar-menu";
+import { Toaster, toast } from "@repo/ui/components/sonner";
 import { cn } from "@repo/ui/lib/utils";
-import { toast, Toaster } from "@repo/ui/components/sonner";
+import { useEffect, useState } from "react";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);

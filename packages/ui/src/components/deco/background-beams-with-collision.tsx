@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
-  useRef,
-  useState,
-  useEffect,
+  type HTMLProps,
   type ReactNode,
   type RefObject,
   forwardRef,
-  type HTMLProps,
+  useEffect,
+  useRef,
+  useState,
 } from "react";
 
 export const BackgroundBeamsWithCollision = ({
@@ -200,7 +200,7 @@ const CollisionMechanism = forwardRef<
         }}
         transition={{
           duration: beamOptions.duration || 8,
-          repeat: Infinity,
+          repeat: Number.POSITIVE_INFINITY,
           repeatType: "loop",
           ease: "linear",
           delay: beamOptions.delay || 0,

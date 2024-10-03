@@ -10,6 +10,7 @@
     "upgrade": "modern upgrade"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^10.0.0",
     "@modern-js/runtime": "2.60.2",
     "@repo/ui": "workspace:*",
     "lucide-react": "^0.446.0",

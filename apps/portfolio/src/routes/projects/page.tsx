@@ -5,10 +5,9 @@ import {
   SectionTagline,
   SectionTitle,
 } from "@repo/ui/components/section";
-import data from "./data";
-import { ProjectCard } from "./ProjectCard";
-import { cn } from "@repo/ui/lib/utils";
 import { Masonry } from "masonic";
+import { ProjectCard } from "./ProjectCard";
+import data from "./data";
 
 export default function ProjectListPage() {
   return (

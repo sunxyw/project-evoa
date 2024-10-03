@@ -17,6 +17,10 @@ const data: (ProjectCardProps & { featured?: boolean })[] = [
         href: "https://www.sunxyw.me",
         text: "Website",
       },
+      {
+        href: "https://github.com/sunxyw/project-evoa",
+        text: "Source Code (GitHub)",
+      },
     ],
     date: "Jun 2024",
     tags: [

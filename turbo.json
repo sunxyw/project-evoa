@@ -18,6 +18,10 @@
     "start": {
       "dependsOn": ["^start"],
       "persistent": true
+    },
+    "deploy": {
+      "dependsOn": ["^build"],
+      "cache": false
     }
   }
 }
